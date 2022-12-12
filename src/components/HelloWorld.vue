@@ -12,6 +12,19 @@
           {{ item.calories }}
         </v-chip>
       </template>
+      <template v-slot:[`item.name`]="{ item }">
+        <v-text-field outlined :label=`{item.name}`>
+          {{item.name}}
+        </v-text-field>
+        <!-- <v-btn color="green">
+          {{item.name}}
+        </v-btn> -->
+      </template>
+      <!-- <template v-slot:[`item.fat`]="{ item }">
+        <v-alert>
+          {{item.fat}}
+        </v-alert>
+      </template> -->
       <template v-slot:top>
         <v-toolbar flat>
           <v-toolbar-title>Desserts Crud</v-toolbar-title>
