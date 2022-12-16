@@ -34,19 +34,20 @@
     </v-app-bar>
     <br />
     <v-main>
-      <table-component></table-component>
+      <new-table-component></new-table-component>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import TableComponent from "./components/TableComponent.vue"
+import NewTableComponent from './components/NewTableComponent.vue';
 
 export default {
-  components: { TableComponent },
   name: "App",
+  components: {NewTableComponent},
   data: () => ({
     //
   }),
+
 };
 </script>
