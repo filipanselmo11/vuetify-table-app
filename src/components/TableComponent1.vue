@@ -36,6 +36,16 @@ export default {
         celular: "12312312321",
         email: "filip@email.com",
       },
+      {
+        nome: "Fílip",
+        celular: "12312312321",
+        email: "filip@email.com",
+      },
+      {
+        nome: "Fílip",
+        celular: "12312312321",
+        email: "filip@email.com",
+      },
     ],
   }),
   methods: {
