@@ -34,19 +34,17 @@
     </v-app-bar>
     <br />
     <v-main>
-      <table-component-1></table-component-1>
+      <final-table-component></final-table-component>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import TableComponent1 from './components/TableComponent1.vue';
-
+import FinalTableComponent from './components/FinalTableComponent.vue';
 export default {
-  components: { TableComponent1 },
+  components: { FinalTableComponent },
   name: "App",
-  data: () => ({
-    //
+  data: () => ({   //
   }),
 
 };

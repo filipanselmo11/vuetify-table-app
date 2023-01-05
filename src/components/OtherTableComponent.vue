@@ -26,6 +26,11 @@
           </template>
         </v-text-field>
       </template>
+      <template v-slot[`item.name`]="{ item }">
+        <v-switch
+          v-model="item.status"
+        ></v-switch>
+      </template>
     </v-data-table>
   </div>
 </template>
@@ -34,6 +39,7 @@
 export default {
   name: "OtherTableComponent",
   data: () => ({
+    dialog: false,
     headers: [
       {
         text: "Nome",
@@ -56,23 +62,27 @@ export default {
       {
         nome: "Naruto",
         sms: "71272181287-219129128",
+        status: true,
         whatsapp: "12321321-123123",
         grupo: "123213-21312312",
       },
       {
         nome: "Goku",
+        status: false,
         sms: "1232134132-12312313123",
         whatsapp: "12323uy81623712687-1231231223",
         grupo: "12312312312-213123123",
       },
       {
         nome: "Ichigo",
+        status: true,
         sms: "12321213-123321",
         whatsapp: "213123434234-21323123",
         grupo: "654336545-3453534543",
       },
       {
         nome: "Sanji",
+        status: false,
         sms: "123123123-12312312",
         whatsapp: "323212-1221123",
         grupo: "1231231201212312312-12312132",
