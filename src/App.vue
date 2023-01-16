@@ -34,18 +34,18 @@
     </v-app-bar>
     <br />
     <v-main>
-      <final-table-component></final-table-component>
+      <crud-table></crud-table>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import FinalTableComponent from './components/FinalTableComponent.vue';
+import CrudTable from "./components/CrudTable.vue";
 export default {
-  components: { FinalTableComponent },
+  components: { CrudTable },
   name: "App",
-  data: () => ({   //
+  data: () => ({
+    //
   }),
-
 };
 </script>
