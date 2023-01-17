@@ -34,15 +34,15 @@
     </v-app-bar>
     <br />
     <v-main>
-      <crud-table></crud-table>
+      <inline-table></inline-table>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import CrudTable from "./components/CrudTable.vue";
+import InlineTable from './components/InlineTable.vue';
 export default {
-  components: { CrudTable },
+  components: {InlineTable  },
   name: "App",
   data: () => ({
     //
